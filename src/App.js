@@ -4,8 +4,20 @@ import './App.css';
 
 class App extends Component {
   render() {
+	  var myStyle = {
+		  fontSize:100,
+		  color:'#FF0000'
+	  }
     return (
-      <div className="App">
+	<div>
+		<div>
+			<h1 style={myStyle}>{1+1}My Style</h1>
+		</div>
+		<div>
+			<h1 style={myStyle}>{1+1}My Style</h1>
+		</div>
+	</div>
+      /*<div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <p>
@@ -20,7 +32,7 @@ class App extends Component {
             Learn React
           </a>
         </header>
-      </div>
+      </div>*/
     );
   }
 }
